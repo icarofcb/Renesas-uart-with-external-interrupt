@@ -1,0 +1,2 @@
+# Renesas_uart_with_external_interrupts
+Description  : This is an code that works on Renesas S7G2 SK Evaluation Board. It sends a string through SCI UART 0 each time you press one of the buttons, SW4 or SW5. The string is sent with the name of the pressed button "SW4" or "SW5".  With TX short circuited to RX(using a jumper), it receives the string sent by the button's interrupt function, the it  validates the information received and blinks the assigned led, LED GREEN for SW4 and LED RED for SW5
