@@ -53,7 +53,7 @@ void sw4_callback(external_irq_callback_args_t *p_args)
 
     uint8_t msg[] = "SW4\n";
 
-    g_uart0.p_api->write(g_uart0.p_ctrl, (uint8_t *)msg, strlen( (char *)msg ) );
+    g_uart0.p_api->write(g_uart0.p_ctrl, (uint8_t *)&msg, strlen( (char *)msg ) );
 
     R_BSP_SoftwareDelay(50, BSP_DELAY_UNITS_MILLISECONDS);
 }
@@ -65,7 +65,7 @@ void sw5_callback(external_irq_callback_args_t *p_args)
 
     uint8_t msg[] = "SW5\n";
 
-    g_uart0.p_api->write(g_uart0.p_ctrl, (uint8_t *)msg, strlen( (char *)msg ) );
+    g_uart0.p_api->write(g_uart0.p_ctrl, (uint8_t *)&msg, strlen( (char *)msg ) );
 
     R_BSP_SoftwareDelay(50, BSP_DELAY_UNITS_MILLISECONDS);
 }
